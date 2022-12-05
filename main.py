@@ -37,12 +37,12 @@ print(age)
 
 # !----------------------------------------------STRINGS
 email = """
-Hey Nazi,
-you know I am your "HUBBY"
+Hello,
+How can I help you?
 Abrar
 """
 print(email)
-name = "Abrar lala bhai"
+name = "Abrar the data analyst"
 print(name[6])
 print(name[0:6])
 name_copy = name[:]
@@ -64,20 +64,21 @@ name = "Doraemon"
 print(len(name))
 
 # !----------------------------------------------UPPER/LOWER CHAR
-wife = "Ayin"
-print(wife.upper())
-hubb = "ABRAR"
-print(hubb.lower())
+autobots = "optimus"
+print(autobots.upper())
+decepticons = "megatron"
+print(decepticons.lower())
 
 # !----------------------------------------------REPLACE/IN/FIND CHAR
-statement = "Ayin amr Gudugudu Baby"
+statement = "Lets be autobots of cybertron"
 print(statement)
-print("WAIT NO NO NO")
-print(statement.replace("Baby", "Jaaner Tukra Babe"))
+statement_2 = statement.replace("autobots", "decepticons")
+print(statement_2)
 print(statement)
-print("Ayin" in statement)
-print(statement.find("gudugudu"))
-print(statement.find("Gudugudu"))
+print("autobots" in statement)
+print("decepticons" in statement)
+print("decepticons" in statement_2)
+print(statement.find("autobots"))
 
 # !----------------------------------------------INT DIVISION/EXPONENT
 print(19239 // 332)
@@ -95,20 +96,16 @@ print(math.log(x, 33.53))
 print(int(math.log(x, 33.53)))
 
 # !----------------------------------------------CONDITION STATEMENT
-is_sexy = False
-is_ugly = True
 
-if is_sexy:
-    print("Abrar is Sexy")
-    print("Ayin loves him")
-elif is_ugly:
-    print("Abrar is ugly as f*ck")
-    print("Ayin still will marry him")
+tof = [True, False]
+is_cool = random.choice(tof)                 # * Choosing true/false at random
+
+print(is_cool)
+
+if (is_cool == True):
+    print("Abrar is cool")
 else:
-    print("Whatever Abrar looks like doesn't matter")
-    print("Ayin will always fucking marry Abrar")
-print("Alhamdulillah Gaiyu still will be beside")
-print("Good Night")
+    print("Abrar is nerd")
 
 # !----------------------------------------------AND/OR/NOT OPERATORS
 has_high_incomes = True
@@ -117,7 +114,7 @@ has_criminal_record = True
 if has_high_incomes and not has_criminal_record:
     print("Eligible on Loan")
 else:
-    print("Bair ho beda")
+    print("No loan sir")
 
 # !----------------------------------------------COMPARISONS
 temperature = 20
@@ -518,8 +515,8 @@ for word in words:
 print(output)
 
 phonebook = {
-    "Ayin": ["01305981601", "Ayin@gmail.com"],
-    "ammu": ["01684130126", "shaheen@gmail.com"],
+    "Ayin": ["01111111111", "Ayin@gmail.com"],
+    "ammu": ["01222222222", "shaheen@gmail.com"],
 }
 print(phonebook["Ayin"][0])
 
@@ -697,7 +694,8 @@ The nominees of 63rd Annual Grammy Awards are:
 """
 )
 
-members = ["Back to Home", "Billie Eilish", "Shawn Mendes", "BTS", "The Weeknd"]
+members = ["Back to Home", "Billie Eilish",
+           "Shawn Mendes", "BTS", "The Weeknd"]
 for member in members:
     print(member)
 
